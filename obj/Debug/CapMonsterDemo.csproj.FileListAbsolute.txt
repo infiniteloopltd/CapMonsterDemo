@@ -25,3 +25,4 @@ c:\users\fiach\documents\visual studio 2013\Projects\CapMonsterDemo\bin\Debug\Sy
 c:\users\fiach\documents\visual studio 2013\Projects\CapMonsterDemo\obj\Debug\CapMonsterDemo.exe
 c:\users\fiach\documents\visual studio 2013\Projects\CapMonsterDemo\obj\Debug\CapMonsterDemo.pdb
 c:\users\fiach\documents\visual studio 2013\Projects\CapMonsterDemo\bin\Debug\secret.txt
+c:\users\fiach\documents\visual studio 2013\Projects\CapMonsterDemo\obj\Debug\CapMonsterDemo.csprojResolveAssemblyReference.cache

@@ -20,16 +20,16 @@ namespace CapMonsterDemo
             {
                 WebsiteUrl = "https://lessons.zennolab.com/captchas/recaptcha/v3.php?level=beta",
                 WebsiteKey = "6Le0xVgUAAAAAIt20XEB4rVhYOODgTl00d8juDob",
-                MinScore = 0.3,
+                MinScore = 0.9,
                 PageAction = "myverify"
             };
             // Create the task and get the task id
             var taskId = client.CreateTaskAsync(captchaTask).Result;
             Console.WriteLine("Created task id : " + taskId);
-            //var solution = client.GetTaskResultAsync<RecaptchaV3TaskProxylessResult>(taskId).Result;
+            var solution = client.GetTaskResultAsync<RecaptchaV3TaskProxylessResult>(taskId).Result;
             // Recaptcha response to be used in the form
-            //var recaptchaResponse = solution.GRecaptchaResponse;
-            var recaptchaResponse = "bad";
+            var recaptchaResponse = solution.GRecaptchaResponse;
+            //var recaptchaResponse = "bad";
             
             Console.WriteLine("Solution : " + recaptchaResponse);
             var web = new WebClient {Encoding = Encoding.UTF8};
